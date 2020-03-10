@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "591464336420",
+    "firebase_url": "https://recognization-text.firebaseio.com",
+    "project_id": "recognization-text",
+    "storage_bucket": "recognization-text.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591464336420:android:4f3b5c5cc42940fc949cb1",
+        "android_client_info": {
+          "package_name": "com.example.restapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591464336420-3jc2uq7eeq1s7bk6g9qc1cdd1edpnica.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSLV_MFUrk_BY24bf8fhOLpmcbnx_D7XU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591464336420-3jc2uq7eeq1s7bk6g9qc1cdd1edpnica.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

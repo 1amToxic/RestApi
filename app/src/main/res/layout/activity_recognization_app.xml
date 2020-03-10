@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="10dp"
+	android:id="@+id/main_layout"
+	tools:context=".TextRecognizationApp.RecognizationApp">
+
+	<ImageView
+		android:id="@+id/image"
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:src="@drawable/ic_image"
+		app:layout_constraintTop_toTopOf="parent" />
+	<androidx.core.widget.NestedScrollView
+		app:layout_constraintBottom_toTopOf="@id/detect_text_image"
+		app:layout_constraintTop_toBottomOf="@id/image"
+		android:layout_width="match_parent"
+		android:layout_height="0dp">
+		<TextView
+			android:fontFamily="casual"
+			android:textSize="25sp"
+			android:hint="Detect display from Image"
+			android:id="@+id/text_display"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"/>
+	</androidx.core.widget.NestedScrollView>
+
+
+	<Button
+		android:textColor="@color/white"
+		android:id="@+id/capture_image"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:background="@drawable/bgr_btn"
+		android:text="Capture Image"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="@id/detect_text_image"
+		app:layout_constraintStart_toStartOf="@id/detect_text_image" />
+
+	<Button
+		android:clickable="false"
+		android:textColor="@color/white"
+		android:id="@+id/detect_text_image"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:background="@drawable/detect_btn"
+		android:text="Detect Image"
+		app:layout_constraintBottom_toTopOf="@id/capture_image"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
